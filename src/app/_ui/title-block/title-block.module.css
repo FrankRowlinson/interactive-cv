@@ -1,0 +1,5 @@
+.block {
+  width: 90%;
+  padding-block-start: calc(var(--outside-spacing-unit) * 2);
+  padding-inline: var(--inside-spacing-unit);
+}

@@ -1,0 +1,10 @@
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--base-size) * 3);
+}
+
+.iconContainer svg {
+  width: var(--font-size-xxl);
+  height: var(--font-size-xxl);
+}

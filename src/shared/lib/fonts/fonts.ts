@@ -1,7 +1,7 @@
-import { Pacifico, Montserrat } from "next/font/google";
+import { Rubik, Geologica } from "next/font/google";
 
-export const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
-export const pacifico = Pacifico({
+export const geologica = Geologica({ subsets: ["latin", "cyrillic"] });
+export const rubik = Rubik({
   subsets: ["latin", "cyrillic"],
   weight: ["400"],
 });

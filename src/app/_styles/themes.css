@@ -1,0 +1,88 @@
+[data-theme="light"],
+[data-theme="light"] html {
+  --color-blank: white;
+  --color-fill: #141414;
+
+  --color-base-text: #141414;
+  --color-title-text: #282859;
+
+  --color-gradient-1: #aee2ff;
+  --color-gradient-2: #acbcff;
+  --color-gradient-3: #b799ff;
+}
+
+[data-theme="dark"],
+[data-theme="dark"] html {
+  --color-blank: #282859;
+  --color-fill: white;
+
+  /* --color-primary: #ffe3a1;
+  --color-secondary: #ffeab9;
+  --color-tertiary: #fff0cb; */
+
+  --color-gradient-1: #aee2ff;
+  --color-gradient-2: #acbcff;
+  --color-gradient-3: #b799ff;
+
+  --color-title: white;
+}
+
+[data-theme="neon"],
+[data-theme="neon"] html {
+}
+
+[data-gradient="linear"],
+[data-gradient="linear"] html {
+  background: linear-gradient(
+    270deg,
+    var(--color-gradient-1),
+    var(--color-gradient-2),
+    var(--color-gradient-3)
+  );
+
+  background-size: 400% 400%;
+
+  animation: linear-gradient 15s ease infinite;
+}
+
+[data-gradient="radial"],
+[data-gradient="radial"] html {
+  background: radial-gradient(
+    circle,
+    var(--color-gradient-1) 10%,
+    var(--color-gradient-2) 45%,
+    var(--color-gradient-3) 95%
+  );
+
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  animation: radial-gradient 5s ease infinite;
+}
+
+@keyframes linear-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes radial-gradient {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-size: 150% 150%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+}

@@ -17,7 +17,7 @@ export function TitleText({
   return (
     <Component
       className={classNames(
-        fonts.pacifico.className,
+        fonts.rubik.className,
         styles.text,
         styles[variant],
         className

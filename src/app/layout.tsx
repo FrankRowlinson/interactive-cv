@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { fonts } from "@/shared/lib";
 import "./_styles/globals.css";
-import Script from "next/script";
+import { Providers } from "./_providers/Providers";
+import "./_styles/themes.css";
 
 export const metadata: Metadata = {
   title: "My page",
@@ -14,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={fonts.montserrat.className}>{children}</body>
+    <html lang='en' suppressHydrationWarning>
+      <Providers>
+        <body className={fonts.geologica.className}>{children}</body>
+      </Providers>
     </html>
   );
 }

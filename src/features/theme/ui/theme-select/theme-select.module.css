@@ -1,0 +1,47 @@
+.listbox {
+  position: relative;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.options {
+  margin-block-start: var(--base-size);
+}
+
+.options {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button,
+.option {
+  padding-block: calc(var(--base-size) * 2);
+  padding-inline: calc(var(--base-size) * 3);
+
+  transition: all 0.2s ease;
+}
+
+.button,
+.options {
+  font-size: var(--font-size-md);
+  color: var(--color-base-text);
+  background: var(--color-blank);
+  width: calc(var(--base-size) * 24);
+  border-radius: var(--border-radius);
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.option:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  position: absolute;
+  list-style: none;
+}

@@ -1,0 +1,26 @@
+.imageBlock {
+  display: flex;
+  justify-content: center;
+  margin-block-start: calc(var(--outside-spacing-unit) * 2);
+  margin-block-end: var(--outside-spacing-unit);
+}
+
+.image {
+  object-fit: none;
+  width: 240px;
+  height: 240px;
+  object-position: right top;
+  border-radius: 50%;
+  border: calc(var(--border-size) * 2) solid var(--color-blank);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+.image:active {
+  transform: scale(1);
+}

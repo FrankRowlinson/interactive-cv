@@ -1,29 +1,4 @@
 .section {
-  display: flex;
-  align-items: center;
-  gap: var(--inside-spacing-unit);
-}
-
-.textBlock {
-  flex-grow: 1;
-  width: min-content;
   display: grid;
   gap: calc(var(--base-size) * 2);
-}
-
-@media (max-width: 768px) {
-  .section {
-    display: block;
-  }
-
-  .textBlock {
-    width: 100%;
-  }
-
-  .imageBlock {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-  }
 }

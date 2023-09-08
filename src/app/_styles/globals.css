@@ -16,14 +16,6 @@
   --border-size: var(--base-size);
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
 
-  /* colors */
-  --color-blank: white;
-  --color-fill: #141414;
-
-  --color-primary: #acbcff;
-  --color-secondary: #aee2ff;
-  --color-tertiary: #b799ff;
-
   /* breakpoints */
   --screen-sm: 576px;
   --screen-md: 768px;
@@ -43,29 +35,3 @@ body {
   overflow-x: hidden;
   color: var(--color-fill);
 }
-
-body {
-  font-size: var(--font-size-md);
-
-  background: radial-gradient(
-    circle,
-    var(--color-secondary) 25%,
-    var(--color-primary) 50%,
-    var(--color-tertiary) 95%
-  );
-  background-attachment: fixed;
-  /* background-size: 400% 400%;
-  animation: gradient 24s ease infinite; */
-}
-
-/* @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */

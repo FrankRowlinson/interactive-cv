@@ -8,3 +8,7 @@
   width: var(--font-size-xxl);
   height: var(--font-size-xxl);
 }
+
+.cursorReset {
+  cursor: default;
+}

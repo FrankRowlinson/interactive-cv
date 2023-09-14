@@ -1,7 +1,7 @@
 .imageBlock {
   display: flex;
   justify-content: center;
-  margin-block-start: calc(var(--outside-spacing-unit) * 2);
+  margin-block-start: var(--inside-spacing-unit);
   margin-block-end: var(--outside-spacing-unit);
 }
 

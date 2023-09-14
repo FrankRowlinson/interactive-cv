@@ -2,7 +2,7 @@
   /* sizes */
   --base-size: 0.25rem; /* 4px for standard font size */
 
-  --inside-spacing-unit: calc(var(--base-size) * 8);
+  --inside-spacing-unit: calc(var(--base-size) * 6);
   --outside-spacing-unit: calc(var(--base-size) * 8);
 
   --font-size-sm: calc(var(--base-size) * 3);

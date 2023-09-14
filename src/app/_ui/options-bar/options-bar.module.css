@@ -1,0 +1,6 @@
+.optionsBar {
+  padding: var(--inside-spacing-unit);
+  display: flex;
+  gap: var(--inside-spacing-unit);
+  justify-content: flex-end;
+}

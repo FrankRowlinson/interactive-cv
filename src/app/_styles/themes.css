@@ -1,10 +1,11 @@
 [data-theme="light"],
 [data-theme="light"] html {
   --color-blank: white;
-  --color-fill: #141414;
 
   --color-base-text: #141414;
   --color-title-text: #282859;
+
+  --text-shadow: none;
 
   --color-gradient-1: #aee2ff;
   --color-gradient-2: #acbcff;
@@ -13,22 +14,30 @@
 
 [data-theme="dark"],
 [data-theme="dark"] html {
-  --color-blank: #282859;
-  --color-fill: white;
+  --color-blank: #282828;
 
-  /* --color-primary: #ffe3a1;
-  --color-secondary: #ffeab9;
-  --color-tertiary: #fff0cb; */
+  --color-base-text: white;
+  --color-title-text: #d1af00;
 
-  --color-gradient-1: #aee2ff;
-  --color-gradient-2: #acbcff;
-  --color-gradient-3: #b799ff;
+  --text-shadow: 0 0 5px #d1af00, 0 0 15px #d1af00;
 
-  --color-title: white;
+  --color-gradient-1: #0d0d0d;
+  --color-gradient-2: #191919;
+  --color-gradient-3: #262626;
 }
 
 [data-theme="neon"],
 [data-theme="neon"] html {
+  --color-blank: #000000;
+
+  --color-base-text: #00ff00;
+  --color-title-text: #ff00ff;
+
+  --text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
+
+  --color-gradient-1: #00ffff;
+  --color-gradient-2: #ff00ff;
+  --color-gradient-3: #ffff00;
 }
 
 [data-gradient="linear"],
@@ -58,31 +67,26 @@
   background-attachment: fixed;
   background-size: 100% 100%;
 
-  animation: radial-gradient 5s ease infinite;
+  animation: radial-gradient 5s ease-in-out infinite;
 }
 
 @keyframes linear-gradient {
-  0% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @keyframes radial-gradient {
-  0% {
+  0%,
+  100% {
     background-size: 100% 100%;
   }
 
   50% {
     background-size: 150% 150%;
-  }
-
-  100% {
-    background-size: 100% 100%;
   }
 }

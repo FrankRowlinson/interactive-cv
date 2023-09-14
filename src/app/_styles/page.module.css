@@ -3,9 +3,6 @@
   max-width: var(--screen-md);
   padding: var(--outside-spacing-unit);
   position: relative;
-}
-
-.sections {
   display: flex;
   flex-direction: column;
 }

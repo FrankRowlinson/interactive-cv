@@ -6,6 +6,7 @@
 
 .text {
   color: var(--color-title-text);
+  text-shadow: var(--text-shadow);
   font-weight: 600;
 }
 

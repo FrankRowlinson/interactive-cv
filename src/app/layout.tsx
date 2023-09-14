@@ -3,6 +3,7 @@ import { fonts } from "@/shared/lib";
 import "./_styles/globals.css";
 import { Providers } from "./_providers/Providers";
 import "./_styles/themes.css";
+import { OptionsBar } from "./_ui";
 
 export const metadata: Metadata = {
   title: "My page",
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <Providers>
-        <body className={fonts.geologica.className}>{children}</body>
+        <body className={fonts.geologica.className}>
+          <OptionsBar />
+          {children}
+        </body>
       </Providers>
     </html>
   );

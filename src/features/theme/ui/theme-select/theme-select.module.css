@@ -5,6 +5,7 @@
 .button {
   border: none;
   cursor: pointer;
+  box-shadow: var(--box-shadow);
 }
 
 .options {
@@ -44,4 +45,16 @@
 .options {
   position: absolute;
   list-style: none;
+}
+
+.transitionLeave {
+  transition: all ease-in 0.1s;
+}
+
+.transitionLeaveFrom {
+  opacity: 1;
+}
+
+.transitionLeaveTo {
+  opacity: 0;
 }
